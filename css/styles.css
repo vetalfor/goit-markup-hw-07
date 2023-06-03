@@ -272,19 +272,20 @@ body {
   .mobile-menu-close-btn:focus .mobile-menu-close-icon {
     fill: #ffffff;
   }
-  .mobile-menu-social-item {
+  .mobile-menu-social-link {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
     height: 40px;
+    padding: 0;
     border-radius: 50%;
     background-color: #4d5ae5;
     transition: background-color var(--transition-duration-and-func);
     fill: var(--main-secodary-text-color);
   }
-  .mobile-menu-social-item:hover,
-  .mobile-menu-social-item:focus {
+  .mobile-menu-social-link:hover,
+  .mobile-menu-social-link:focus {
     background-color: var(--menu-text-color);
     fill: var(--main-secodary-text-color);
   }
