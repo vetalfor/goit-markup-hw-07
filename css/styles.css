@@ -150,7 +150,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background.jpg);
+    url(../images/desktop-img/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -189,11 +189,11 @@ body {
 }
 /* ===========/Hero=========== */
 /* ===========Main=========== */
-.main-content {
+/* .main-content {
   margin: auto;
-}
+} */
 /* About section */
-.about-section {
+/* .about-section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -241,11 +241,11 @@ body {
 .skill-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
+} */
 /* /About section */
 
 /* Specialization section */
-.specialization-section {
+/* .specialization-section {
   padding-bottom: 120px;
 }
 .specialization-list {
@@ -256,11 +256,11 @@ body {
 .img-special {
   box-sizing: border-box;
   width: calc((100% - 48px) / 3);
-}
+} */
 /* /Specialization section */
 
 /* Team section */
-.team-section {
+/* .team-section {
   padding-top: 120px;
   padding-bottom: 120px;
   background-color: var(--main-secodary-text-color);
@@ -341,10 +341,10 @@ body {
 .social-list-link:hover,
 .social-list-link:focus {
   background-color: var(--menu-text-color);
-}
+} */
 /* /Team section */
 /* Section Customers */
-.section-customers {
+/* .section-customers {
   padding: 120px 0 120px;
 }
 .customers-list {
@@ -375,12 +375,12 @@ body {
 
 .customers-icon {
   fill: currentColor;
-}
+} */
 /* /Section Customers */
 /* ===========/Main=========== */
 
 /* ==========Portfolio========== */
-.portfolio {
+/* .portfolio {
   padding: 96px 0 120px;
 }
 .btn-menu-list {
@@ -477,11 +477,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-}
+} */
 /* ==========/Potrfolio========== */
 
 /* ===========Footer=========== */
-.footer {
+/* .footer {
   margin: auto;
   padding: 100px 0;
   background-color: var(--main-title-color);
@@ -611,10 +611,10 @@ body {
 }
 .telegram-icon {
   margin-left: 16px;
-}
+} */
 /* ===========/Footer=========== */
 /* ===========Modal=========== */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -820,5 +820,5 @@ body {
 .contact-form-submit:hover,
 .contact-form-submit:focus {
   background-color: var(--menu-text-color);
-}
+} */
 /* ===========/Modal=========== */
