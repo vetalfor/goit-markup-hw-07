@@ -90,6 +90,18 @@ body {
   background-color: var(--menu-text-color);
   border-radius: 2px;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 /* ===========/Default=========== */
 
 /* ===========Шапка=========== */
@@ -197,8 +209,6 @@ body {
     gap: 40px;
   }
   .mobile-link-item {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -217,8 +227,6 @@ body {
     margin-bottom: 40px;
   }
   .phone-mobile-menu {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
@@ -227,8 +235,6 @@ body {
     color: var(--main-text-color);
   }
   .email-mobile-menu {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -314,14 +320,13 @@ body {
   letter-spacing: 0.02em;
   gap: 40px;
 } */
-.link-item {
+/* .link-item {
   position: relative;
   display: block;
   padding: 24px 0;
   color: var(--main-title-color);
   transition: color var(--transition-duration-and-func);
-}
-
+} */
 /* .feedback-menu {
   font-style: normal;
   display: flex;
@@ -331,27 +336,38 @@ body {
   display: flex;
   gap: 40px;
 } */
-.feedback {
+/* .feedback {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   transition: color var(--transition-duration-and-func);
-}
+} */
 /* ===========/Шапка=========== */
-
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/mobile-img/background-mobil@2x.jpg);
+  }
+}
 /* ===========Hero=========== */
 .main-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
   margin: auto;
-  max-width: 496px;
-  margin-bottom: 48px;
-  color: #ffffff;
+  max-width: 320px;
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--main-background-color);
 }
 .main-btn {
   display: block;
@@ -360,13 +376,12 @@ body {
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--main-background-color);
+  background-color: var(--privacy-link-color);
   cursor: pointer;
   transition: background-color var(--transition-duration-and-func);
 }
@@ -376,14 +391,39 @@ body {
 }
 /* ===========/Hero=========== */
 /* ===========Main=========== */
-/* .main-content {
-  margin: auto;
-} */
-/* About section */
-/* .about-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+/* About-section */
+.about-icon {
+  display: none;
 }
+.about-section {
+  padding: 96px;
+}
+.skill {
+  padding-bottom: 72px;
+}
+.skill-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--hero-background-color);
+  margin-bottom: 8px;
+}
+.skill-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+.skill-name:last-child {
+  margin-bottom: 0;
+}
+/* 
 .about-icon {
   display: flex;
   align-items: center;
@@ -392,18 +432,6 @@ body {
   margin-bottom: 8px;
   border-radius: 4px;
   background-color: #f4f4fd;
-}
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
 }
 .list-skills {
   display: flex;
@@ -801,7 +829,7 @@ body {
 } */
 /* ===========/Footer=========== */
 /* ===========Modal=========== */
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1007,5 +1035,5 @@ body {
 .contact-form-submit:hover,
 .contact-form-submit:focus {
   background-color: var(--menu-text-color);
-} */
+}
 /* ===========/Modal=========== */
