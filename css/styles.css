@@ -272,6 +272,22 @@ body {
   .mobile-menu-close-btn:focus .mobile-menu-close-icon {
     fill: #ffffff;
   }
+  .mobile-menu-social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+    transition: background-color var(--transition-duration-and-func);
+    fill: var(--main-secodary-text-color);
+  }
+  .mobile-menu-social-item:hover,
+  .mobile-menu-social-item:focus {
+    background-color: var(--menu-text-color);
+    fill: var(--main-secodary-text-color);
+  }
 }
 /* .header-container {
   display: flex;
