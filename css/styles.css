@@ -396,7 +396,7 @@ body {
   display: none;
 }
 .about-section {
-  padding: 96px;
+  padding: 96px 0;
 }
 .skill {
   padding-bottom: 72px;
@@ -418,10 +418,46 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
+  color: var(--hero-background-color);
 }
 .skill-name:last-child {
   margin-bottom: 0;
+}
+/* Section-team */
+.minor-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--main-title-color);
+  margin-bottom: 72px;
+}
+.team-list-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+}
+.team-list-item:last-child {
+  margin-bottom: 0;
+}
+/* Customers-company */
+.section-customers {
+  padding: 96px 0;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
+}
+
+.customers-logo {
+  width: calc((100% - 24px) / 2);
+  height: 88px;
 }
 /* 
 .about-icon {
