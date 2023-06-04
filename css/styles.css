@@ -710,22 +710,13 @@ body {
     letter-spacing: 0.02em;
   }
   .section-hero {
-    margin: auto;
-    padding: 112px 0 112px;
-    text-align: center;
     max-width: 768px;
     height: 436px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/tablet-img/background-tablet.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   .modal {
     max-width: 408px;
@@ -799,6 +790,7 @@ body {
     width: 264px;
   }
 }
+/* ======Tablet-version====== */
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
@@ -810,98 +802,154 @@ body {
       url(../images/tablet-img/background-tablet@2x.jpg);
   }
 }
-/* 
-.about-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  margin-bottom: 8px;
-  border-radius: 4px;
-  background-color: #f4f4fd;
+/* ======Desktop-version====== */
+@media screen and (max-width: 1157px) {
+  .specialization-section {
+    display: none;
+  }
 }
-.list-skills:last-child {
-  margin-right: 0;
-}
-.skill {
-  width: calc((100% - 72px) / 4);
-}
-.skill-name {
-  text-align: start;
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--main-title-color);
-}
-.skill-text {
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-} */
-/* /About section */
+@media screen and (min-width: 1158px) {
+  .mobile-menu-open-btn {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .logo {
+    margin-right: 76px;
+  }
+  .feedback-list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .feedback {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .section-hero {
+    padding: 188px 0 188px;
+    max-width: 1440px;
+    height: 600px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/desktop-img/background.jpg);
+  }
+  /* about-desktop */
+  .about-section {
+    padding: 120px 0 120px;
+  }
+  .about-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+  }
+  .list-skills:last-child {
+    margin-right: 0;
+  }
+  .skill {
+    width: calc((100% - 72px) / 4);
+  }
+  .skill-name {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+  }
+  .skill-text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 400;
+  }
+  /* Specialization section-desktop */
+  .specialization-section {
+    padding-bottom: 120px;
+  }
+  .specialization-list {
+    display: flex;
+    gap: 24px;
+  }
 
-/* Specialization section */
-/* .specialization-section {
-  padding-bottom: 120px;
+  .img-special {
+    box-sizing: border-box;
+    width: calc((100% - 48px) / 3);
+  }
+  /* /Specialization section-desktop */
+  /* Team section-desktop */
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: var(--main-secodary-text-color);
+  }
+  .minor-title {
+    margin-top: 0;
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--main-title-color);
+  }
+  .team-section {
+    padding: 120px 0 120px;
+    background-color: var(--main-secodary-text-color);
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-list:last-child {
+    margin-right: 0;
+  }
+  .members-company-container {
+    max-width: 1158px;
+  }
+  /* /Team section-desktop */
+  /* Customers-desktop */
+  .section-customers {
+    padding: 120px 0 120px;
+  }
+  .customers-container {
+    max-width: 1158px;
+  }
+  .customers-list {
+    column-gap: 24px;
+  }
+  .customers-logo {
+    width: calc((100% - 120px) / 6);
+  }
+  /* /Customers-desktop */
+  /* Footer-desktop */
+  .footer {
+    margin: auto;
+    padding: 100px 0;
+  }
+  .footer-container {
+    max-width: 1158px;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0;
+  }
+  .footer-left-content {
+    margin-right: 120px;
+  }
+  .social-footer-container {
+    margin-right: 80px;
+  }
+  /* /Footer-desktop */
 }
-.specialization-list {
-  display: flex;
-  gap: 24px;
-}
-
-.img-special {
-  box-sizing: border-box;
-  width: calc((100% - 48px) / 3);
-} */
-/* /Specialization section */
-
-/* Team section */
-/* .team-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: var(--main-secodary-text-color);
-}
-.minor-title {
-  margin-top: 0;
-  margin-bottom: 72px;
-  font-size: 36px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-align: center;
-  text-transform: capitalize;
-  color: var(--main-title-color);
-}
-.team-section {
-  padding: 120px 0 120px;
-  background-color: var(--main-secodary-text-color);
-}
-.team-list {
-  display: flex;
-  gap: 24px;
-}
-.team-list:last-child {
-  margin-right: 0;
-}
- */
-/* /Team section */
-/* Section Customers */
-/* .section-customers {
-  padding: 120px 0 120px;
-}
- */
-/* /Section Customers */
 /* ===========/Main=========== */
-/* ===========Footer=========== */
-/* .footer {
-  margin: auto;
-  padding: 100px 0;
-  background-color: var(--main-title-color);
-}
-
- */
-/* ===========/Footer=========== */
 /* ===========Modal=========== */
 .backdrop {
   position: fixed;
@@ -1112,7 +1160,7 @@ body {
 }
 /* ===========/Modal=========== */
 /* ==========Portfolio========== */
-/* .portfolio {
+.portfolio {
   padding: 96px 0 120px;
 }
 .btn-menu-list {
@@ -1209,5 +1257,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-} */
+}
 /* ==========/Potrfolio========== */
